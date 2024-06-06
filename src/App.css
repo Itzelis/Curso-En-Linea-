@@ -1,0 +1,119 @@
+.App {
+  text-align: center;
+  background-color: #121212; /* Fondo de toda la aplicación */
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Añadido para permitir la posición absoluta de la imagen */
+}
+
+.home-page {
+  padding: 20px;
+  width: 80%;
+  position: relative; /* Añadido para contexto de posición absoluta */
+}
+
+.decorative-image {
+  width: 700px; /* Ajusta el tamaño según tus necesidades */
+  height: auto;
+  position: absolute; /* Para posicionar la imagen absolutamente */
+  right: -560px; /* Ajusta esta propiedad para mover la imagen a la derecha */
+  top: -20px; /* Ajusta esta propiedad para mover la imagen verticalmente */
+}
+
+.course-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.course-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.course-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 80%;
+  background-color: #333;
+  transition: transform 0.2s;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+}
+
+.course-image {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.course-info {
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.course-info h3 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.course-info p {
+  font-size: 1em;
+  color: #bbb;
+  margin: 5px 0 0;
+}
+
+.course-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 80%;
+}
+
+.main-content {
+  background-color: #1e1e1e; /* Fondo específico para la parte del video y la descripción */
+  padding: 20px;
+  border-radius: 10px; /* Añadir un radio para los bordes */
+  width: 100%;
+}
+
+.video-container {
+  margin-bottom: 20px;
+}
+
+.course-text {
+  text-align: left;
+  width: 100%;
+}
+
+.course-text h2 {
+  font-size: 2em;
+}
+
+.course-text p {
+  font-size: 1.2em;
+  color: #bbb;
+}
+
+.course-additional-text {
+  width: 100%;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.course-additional-text p {
+  font-size: 1em;
+  color: #bbb;
+  margin: 10px 0;
+}
